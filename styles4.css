@@ -3,7 +3,13 @@
   padding: 0;
   margin: 0;
 }
-
+:root {
+  --colo-verde: #13424c;
+  --colo-verde-clar: #218490;
+  --color-marron: #1A2C44;
+  /* --color-marron: #210440; */
+  /* --color-marron: #AE7C54; */
+}
 html {
   font-size: 62.5%;
 }
@@ -11,46 +17,94 @@ html {
 body {
   width: 100vw;
   height: auto;
-  background-color: lightgray;
+  /* background: linear-gradient(90deg, var(--color-marron), var(--colo-verde)); */
+  background: var(--colo-verde);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-body h1 {
-  padding: 10px;
-  background-color: rebeccapurple;
-  font-size: 4rem;
+  overflow-x: hidden;
 }
 
 img {
   width: 200px;
   height: 200px;
 }
-
-
-#randomMichis {
-  width: 80%;
+body h1 {
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  background-color: var(--color-marron);
+  font-size: 4rem;
+/*   color: #d6a379; */
+color: #fff;
+  font-weight: 900;
 }
 
-#randomMichis .fav {
-  display: flex;
+/* Random michis---------------------------- */
+
+#randomMichis {
+  margin-top: 20px;
+  width: 60%;
   text-align: center;
+  background: linear-gradient(90deg, var(--colo-verde-clar), var(--color-marron));
+  border: 3px solid lightgray;
+  border-radius: 20px;
 }
 
 #randomMichis h2 {
-  color: w;
+  padding: 10px 0;
+  font-size: 2rem;
+  color: #fff;
+}
+#randomMichis .fav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+#randomMichis .fav article{
+  display: flex;
+  flex-direction: column;
+}
+#randomMichis .fav article button{
+  padding: 10px 0;
+  border: 3px solid var(--colo-verde-clar);
+  background-color: var(--colo-verde);
+  font-size: 1.4rem;
+  color: #fff;
+  border-radius: 0 0 20px 20px;
+  transition: .3s ease-in-out;
+}
+#randomMichis .fav article button:hover{
+  background-color: var(--colo-verde-clar);
+}
+.imgaleatorio{
+  border: 3px solid lightgray;
+  border-radius: 20px 20px 0 0;
+}
+.imgaleatorio:hover{
+  border: 3px solid var(--colo-verde-clar);
 }
 
-
-
-
-
-
-
-
+.recargar{
+  border: none;
+  width: 40px;
+  height: 40px;
+  margin: 10px auto;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: 700;
+  color: #fff;
+  background-color: var(--colo-verde);
+  transition: .3s ease-in-out;
+}
+.recargar:hover{
+  background-color: var(--colo-verde-clar);
+}
 
 
 
