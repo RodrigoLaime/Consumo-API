@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width: 80%;
+    max-width: 768px;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   /*  background-color: red; */
+}
+main h1 {
+    width: 100%;
+    /* background-color: violet; */
+    text-align: center;
+    font-size: 3rem;
+    padding: 10px 0;
+    border: 2px solid cyan;
+}
+#randomMichis{
+    text-align: center;
+}
+#randomMichis h2{
+    padding: 10px 0;
+    font-size: 2rem;
+}
+.img-one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 220px;
+    gap: 10px;
+    width: 320px;
+    /* background-color: darkblue; */
+}
+
+img{
+    width: 150x;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid cyan;
+    transition: 0.5s;
+}
+
+button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#favoriteMichis{
+    /* background-color: aqua; */
+}
+#favoriteMichis h2{
+    text-align: center;
+    padding: 10px 0;
+}
+#favoriteMichis article{
+    width: 320px;
+    /* background-color: darkgoldenrod; */
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#favoriteMichis img{
+    width: 130px;
+    height: 130px;
+}

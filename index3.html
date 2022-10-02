@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gatitos aleatorios</title>
+  <link rel="stylesheet" href="./stylos.css">
+</head>
+<body>
+  <main>
+    <h1>Michis App</h1>
+
+  <span id="error"></span>
+
+  <section id="randomMichis">
+    <h2>Michis aleatorios</h2>
+
+    <div class="img-one">
+        <article>
+            <img id="img1" width="150" alt="Foto gatito aleatorio">
+            <button id="btn1">
+              agregar
+            </button>
+          </article>
+      
+          <article>
+            <img id="img2" width="150" alt="Foto gatito aleatorio">
+            <button id="btn2">
+              agregar
+            </button>
+          </article>
+    </div>
+    
+
+    <button onclick="loadRandomMichis()">cargar</button>
+  </section>
+  
+  <section id="uploadingMichi">
+    <h2></h2>
+
+    <form id="uploadingForm">
+        <input type="file" id="file" name="file">
+
+        <button type="button" onclick="uploadMichiPhoto()">agregar</button>
+    </form>
+  </section>
+
+  <section id="favoriteMichis">
+    <h2>Michis favoritos</h2>
+
+    <article>
+      <img id="img1" alt="Foto gatito aleatorio">
+      <button></button>
+    </article>
+  </section>
+
+  </main>
+
+  <script src="./main3.js"></script>
+</body>
+</html>
