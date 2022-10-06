@@ -49,10 +49,10 @@ async function loadFavouriteMichis() {
     const section = document.getElementById('favoriteMichis')
     section.innerHTML = "";
 
-    const h2 = document.createElement('h2');
-    const h2Text = document.createTextNode('Michis favoritos');
-    h2.appendChild(h2Text);
-    section.appendChild(h2);
+    /*  const h2 = document.createElement('h2');
+     const h2Text = document.createTextNode('Michis favoritos');
+     h2.appendChild(h2Text);
+     section.appendChild(h2); */
 
     data.forEach(michi => {
       const article = document.createElement('article');
@@ -61,6 +61,7 @@ async function loadFavouriteMichis() {
       const btnText = document.createTextNode('Sacar al michi de favoritos');
 
       img.src = michi.image.url;
+      img.classList.add('gatitos');
       img.width = 150;
       btn.appendChild(btnText);
       btn.onclick = () => deleteFavouriteMichi(michi.id);
