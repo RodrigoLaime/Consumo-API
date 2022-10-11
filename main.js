@@ -134,7 +134,7 @@ async function uploadMichiPhoto() {
   })
   const data = await res.json();
 
-  if (res.status !== 200) {
+  if (res.status !== 201) {
     spanError.innerHTML = "Hubo un error: " + res.status + data.message;
     console.log({ data })
   } else {
