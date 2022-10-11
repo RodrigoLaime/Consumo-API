@@ -10,6 +10,15 @@ const API_URL_UPLOAD = 'https://api.thecatapi.com/v1/images/upload';
 
 const spanError = document.getElementById('error')
 
+/* const recargar = document.getElementById('recargar');
+recargar.addEventListener('click', () => {
+  recargar.style.background = '#000000'
+  setTimeout(() => {
+    recargar.style.background = ' #13424c';
+  }, 1000)
+}) */
+
+
 async function loadRandomMichis() {
   const res = await fetch(API_URL_RANDOM);
   const data = await res.json();
